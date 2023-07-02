@@ -1,0 +1,247 @@
+.circle,
+.box,
+.triangle-up,
+.triangle-down{
+    width: 800px;
+    height: 350px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px; 
+    padding-left: 25px;
+    
+}
+.one{
+    width:400px;
+    color: #2b6ccf;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom-width: 2px;
+    border-bottom-style: solid ;
+    border-bottom-color: #2b6ccf #ddd;
+    position: relative;
+   
+}
+
+.one::after,
+.two::after,
+.three::after,
+.four::after{
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+.two{
+    width: 400px;
+    color: #2f9e0f;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom-width: 2px;
+    border-bottom-style: solid ;
+    border-bottom-color: #ce2c2c #ddd;
+    position: relative;
+  
+}
+.three{
+    width: 400px;
+    color: #ce2c2c;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom-width: 2px;
+    border-bottom-style: solid ;
+    border-bottom-color: #2f9e0f #ddd;
+    position: relative;
+ 
+}
+.four{
+    width: 400px;
+    color: #d67f44;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom-width: 2px;
+    border-bottom-style: solid ;
+    border-bottom-color: #d67f44 #ddd ;
+    position: relative;
+}
+/*start of circle section*/
+.circle .one::before {
+    content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: #2b6ccf;
+        position: absolute;
+        left: -15px;
+        top: 10px;
+}
+.circle .two::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #ce2c2c;
+    position: absolute;
+    left: -15px;
+        top: 10px;
+}
+.circle .three::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #2f9e0f;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+}
+.circle .four::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #d67f44;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+}
+
+/*end of circle section*/
+
+/*start of box section*/
+.box .one::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -15px;
+        top: 10px;
+    background-color: #2b6ccf;
+}
+.box .two::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+left: -15px;
+    top: 10px;
+    background-color: #2f9e0f;
+}
+.box .three::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -15px;
+        top: 10px;
+    background-color: #ce2c2c;
+}
+.box .four::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -15px;
+        top: 10px;
+    background-color: #d67f44;
+}
+/*end of box section*/
+
+/*start of triangle-up section*/
+.triangle-up .one::before{
+    content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent #2b6ccf transparent;
+        position: absolute;
+        left: -25px;
+        top: -10px;
+}
+.triangle-up .two::before{
+    content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent #2f9e0f transparent;
+        position: absolute;
+        left: -25px;
+    top: -10px;
+}
+.triangle-up .three::before{
+    content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent #ce2c2c transparent;
+        position: absolute;
+        left: -25px;
+    top: -10px;
+}
+.triangle-up .four::before{
+    content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent #d67f44 transparent;
+        position: absolute;
+        left: -25px;
+     top:-10px;
+}
+/*end of triangle-up section*/
+
+/*start of triangle down section*/
+.triangle-down .one::before{
+    content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-color: #2b6ccf transparent transparent transparent;
+        position: absolute;
+        left: -25px;
+        top: 18px;
+}
+.triangle-down .two::before{
+    content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-color: #2f9e0f transparent transparent transparent;
+        position: absolute;
+        left: -25px;
+        top: 18px;
+}
+.triangle-down .three::before{
+    content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-color: #ce2c2c transparent transparent transparent;
+        position: absolute;
+        left: -25px;
+        top: 18px;
+}
+.triangle-down .four::before{
+    content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-color: #d67f44 transparent transparent transparent;
+        position: absolute;
+        left: -25px;
+        top: 18px;
+}
+/*st of triangle down section*/
